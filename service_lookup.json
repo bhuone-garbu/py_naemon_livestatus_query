@@ -1,0 +1,36 @@
+{
+                      "TITLE": "!!!!!!!!!!!!!!!!!!!!!!!!!DECRECATED!!!!!!!!!!!!!!!!!!!!!",
+
+
+
+  "_comment#0": "keys in lower case!!!, double quotes for string",
+  "_comment#1": "The number is used to retrieve the numerical value from the plugin output, and unit and description. Where there are null, it has more info to add in the 'suffix' key but the idea is the same",
+  "_comment#1-continued": "list key should uniquely identify the name put in the naemon",
+
+  "list":
+  {
+    "cpu_load": [2, "%", "description"],
+	"ats_data": "more",
+    "pdu_load": [1, "amps", "load in ampheres"],
+    "humid": [2, "%", "Humidity RH level"],
+    "temp": [2, "celsius", "temperature"],
+    "swap_usage": [2, "MB", "current swap usage"],
+    "total_processes": [1, "", "total processes count"],
+    "c:_drive_space": [1, "%", "free space"],
+    "d:_drive_space": [1, "%", "free space"],
+    "e:_drive_space": [1, "%", "free space"],
+    "i:_drive_space": [1, "%", "free space"]
+
+  },
+
+  "_comment#2": "This is if we want to add anything after the lookup keys as well to record additional fields",
+  "_comment#2-continued": "Main point is it tells people looking at this file that the following service suffix are supported - the programmer has done #something.",
+
+  "suffix":
+  {
+    "ats_data": {
+      "voltage_max": [8, "volt", "minimum input voltage"],
+      "voltage_min": [4, "volt", "minimum input voltage"]
+    }
+  }
+}
