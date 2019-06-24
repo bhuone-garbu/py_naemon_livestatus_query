@@ -11,10 +11,10 @@ import re
 
 '''Update here if we change the ports on central naemon'''
 g_sites = {
-    'offshore': 6558,
-    'onshore': 6559,
-    'eigen.local': 6556,
-    'lundin': 6557
+    'offsite': 6558,
+    'onsite': 6559,
+    'local_server': 6556,
+    'global': 6557
 }
 
 TAG_SEPARATOR = '_'
